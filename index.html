@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Admin Panel Dashbord</title>
+  <!-- Bootstrap 5 Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icon Awesome Link -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <!-- My Css -->
+  <link rel="stylesheet" href="Css-Scss/admin.css">
+</head>
+<body>
+
+
+  <div class="contianer ps-lg-3 ps-2">
+  
+    <div class="row w-100">
+  
+      <div class="col-12 col-sm-12 ms-lg-0 ms-2">
+  
+        <div class="d-flex nav-top mb-3 align-items-center justify-content-between pt-3">
+  
+          <button class="btn btn-shadow p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+            aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+  
+          <div class="offcanvas offcanvas-start d-block border-0 p-0" tabindex="-1"
+            id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel1">
+  
+            <div class="offcanvas-header mb-lg-3 mb-md-3 mb-0 d-flex justify-content-end pb-0 px-0">
+
+              <button type="button" class="btn px-0 btn-shadow text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+
+              </button>
+
+            </div>
+  
+            <div class="offcanvas-body p-0">
+  
+              <div class="left-bar" id="leftBar">
+                <ul>
+  
+                  <li class="mb-3 pt-3">
+                    <a href="#" class="li-top">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-bootstrap mb-1" viewBox="0 0 16 16">
+                        <path
+                          d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+                        <path
+                          d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+                      </svg>
+                      Brend
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-house-door mb-2" viewBox="0 0 16 16">
+                        <path
+                          d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                      </svg>
+                      Statistika
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-people mb-2" viewBox="0 0 16 16">
+                        <path
+                          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                      </svg>
+                      Müştəri
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-chat mb-2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                      </svg>
+                      Mesaj
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-question-lg mb-2" viewBox="0 0 16 16">
+                        <path
+                          d="M3 4.075a.423.423 0 0 0 .43.44H4.9c.247 0 .442-.2.475-.445.159-1.17.962-2.022 2.393-2.022 1.222 0 2.342.611 2.342 2.082 0 1.132-.668 1.652-1.72 2.444-1.2.872-2.15 1.89-2.082 3.542l.005.386c.003.244.202.44.446.44h1.445c.247 0 .446-.2.446-.446v-.188c0-1.278.487-1.652 1.8-2.647 1.086-.826 2.217-1.743 2.217-3.667C12.667 1.301 10.393 0 7.903 0 5.645 0 3.17 1.053 3.001 4.075zm2.776 10.273c0 .95.758 1.652 1.8 1.652 1.085 0 1.832-.702 1.832-1.652 0-.985-.747-1.675-1.833-1.675-1.04 0-1.799.69-1.799 1.675z" />
+                      </svg>
+                      Kömək
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-gear mb-1" viewBox="0 0 16 16">
+                        <path
+                          d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path
+                          d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                      </svg>
+                      Ayarlar
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-lock mb-2" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                      </svg>
+                      Şifrə
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-box-arrow-right mb-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                        <path fill-rule="evenodd"
+                          d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                      </svg>
+                      Çıxış
+                    </a>
+                  </li>
+  
+                </ul>
+  
+              </div>
+  
+            </div>
+
+          </div>
+  
+          <div class="nav-search position-relative">
+  
+            <input type="search" placeholder="Axtarış">
+  
+            <button type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+  
+          </div>
+  
+          <div class="nav-img">
+            <img
+              src="https://media.istockphoto.com/photos/portrait-young-confident-smart-asian-businessman-look-at-camera-and-picture-id1288538088?b=1&k=20&m=1288538088&s=170667a&w=0&h=3efMku7kSXUhpVrErAVVgxp6G91tRZ_5seygOn68RnE="
+              alt="">
+          </div>
+  
+        </div>
+  
+        <div class="row mb-3">
+  
+          <div class="col-lg-3 col-md-6 col-sm-6">
+  
+            <div class="card card-static mb-3 border-0">
+  
+              <div class="card-body justify-content-between d-flex">
+  
+                <div>
+  
+                  <span class=" d-block fs-3 fw-bold">
+                    1.547
+                  </span>
+  
+                  <span>
+                    Gündəlik Baxış
+                  </span>
+  
+                </div>
+  
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 col-sm-6">
+  
+            <div class="card card-static mb-3 border-0">
+  
+              <div class="card-body justify-content-between d-flex">
+  
+                <div>
+  
+                  <span class=" d-block fs-3 fw-bold">
+                    80
+                  </span>
+  
+                  <span>
+                    Satış
+                  </span>
+  
+                </div>
+  
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 col-sm-6">
+  
+            <div class="card card-static mb-3 border-0">
+  
+              <div class="card-body justify-content-between d-flex">
+  
+                <div>
+  
+                  <span class=" d-block fs-3 fw-bold">
+                    284
+                  </span>
+  
+                  <span>
+                    Şərhlər
+                  </span>
+  
+                </div>
+  
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chat"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                </svg>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 col-sm-6">
+  
+            <div class="card card-static mb-3 border-0">
+  
+              <div class="card-body justify-content-between d-flex">
+  
+                <div>
+  
+                  <span class=" d-block fs-3 fw-bold">
+                    $7.552
+                  </span>
+  
+                  <span>
+                    Qazanc
+                  </span>
+  
+                </div>
+  
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-cash-stack" viewBox="0 0 16 16">
+                  <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                  <path
+                    d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
+                </svg>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+        </div>
+  
+        <div class="row">
+  
+          <div class="col-lg-8 col-md-6 col-sm-12 mb-lg-0 mb-4">
+  
+            <div class="orders-table">
+  
+              <div class="d-flex justify-content-between">
+                <span class="h5 fw-bold text-primary">Son Sifarişlər</span>
+                <p class="badge bg-primary p-2">Hamısına Baxmaq</p>
+              </div>
+  
+              <table class="table">
+  
+                <head>
+                  <tr class="bg-white">
+                    <th class="col">Ad</th>
+                    <th class="col text-end">Qiymət</th>
+                    <th class="col text-center">Ödəmə</th>
+                    <th class="col text-end">Status</th>
+                  </tr>
+                </head>
+  
+                <tbody>
+  
+                  <tr scope="row">
+                    <td>Star Refrigerator</td>
+                    <td class="text-end">$1200</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-success">Delivered</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Windows Color</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Speaker</td>
+                    <td class="text-end">$620</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-danger">Return</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Hp Laptop</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-primary">In Progress</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Star Refrigerator</td>
+                    <td class="text-end">$1200</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-success">Delivered</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Windows Color</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Speaker</td>
+                    <td class="text-end">$620</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-danger">Return</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Hp Laptop</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-primary">In Progress</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Star Refrigerator</td>
+                    <td class="text-end">$1200</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-success">Delivered</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Windows Color</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Speaker</td>
+                    <td class="text-end">$620</td>
+                    <td class="text-center">Paid</td>
+                    <td class="text-end"><span class="badge bg-danger">Return</span></td>
+                  </tr>
+  
+                  <tr scope="row">
+                    <td>Hp Laptop</td>
+                    <td class="text-end">$110</td>
+                    <td class="text-center">Due</td>
+                    <td class="text-end"><span class="badge bg-primary">In Progress</span></td>
+                  </tr>
+  
+                </tbody>
+  
+              </table>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="recent-customers">
+  
+              <span class="d-block text-primary mb-3 fs-6 fw-bold">Son Müştərilər</span>
+  
+              <ul>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQImW5vjxkTvwV3TD-t6AEWA7MciPsxuKtJnA&usqp=CAU"
+                        style="object-fit: cover;" width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVk6yKWWKBW8UJJxpt4DpCQ2mbSr0UVOvwFg&usqp=CAU"
+                        style="object-fit: cover;" width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vXK_TNsbD4vCF9HMyyy9MOkk15cwn1eo0A&usqp=CAU"
+                        style="object-fit: cover;" width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+                <li class="mb-3">
+                  <div class="img-list d-flex">
+  
+                    <div class="img">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2GiRhLJbsuBfgzSi4bqhrh_Tc5wQLQVDFA&usqp=CAU"
+                        style="object-fit: cover;" width="50" height="50" alt="">
+                    </div>
+  
+                    <div class="text-img ms-2">
+                      <span class="">Murad</span>
+                      <span class="d-block">Azərbaycan</span>
+                    </div>
+  
+  
+                  </div>
+                </li>
+  
+              </ul>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+
+  
+<!-- Bootstrap 5 Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- My Js -->
+<script src="JavaScript/admin.js"></script>
+
+</body>
+</html>

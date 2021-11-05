@@ -1,0 +1,246 @@
+/*=========================================================*/
+/* Global Class */
+/*=========================================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-X: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-shadow:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*=========================================================*/
+/* left Side Bar Section  */
+/*=========================================================*/
+@media (min-width: 375px) {
+  .offcanvas {
+    width: 300px;
+    padding: 0;
+    background-color: #0d6efd;
+  }
+  .offcanvas .offcanvas-header {
+    position: absolute;
+    right: -15%;
+    top: -10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offcanvas {
+    overflow-y: auto;
+    width: 100%;
+    padding: 0;
+    background-color: #0d6efd;
+  }
+}
+
+.left-bar {
+  background-color: #0d6efd;
+  height: 100%;
+}
+
+.left-bar ul .li-top {
+  color: #0d6efd;
+  padding-left: 15px;
+  line-height: 50px;
+  font-size: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: block;
+  background-color: #ffffff;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+.left-bar ul li {
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+.left-bar ul li a {
+  color: white;
+  padding-left: 15px;
+  line-height: 50px;
+  font-size: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: block;
+  background-color: #0d6efd;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+.left-bar ul li a:hover {
+  color: #0d6efd;
+  padding-left: 15px;
+  line-height: 50px;
+  font-size: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: block;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  background-color: white;
+}
+
+.left-bar ul li a svg {
+  margin-right: 10px;
+}
+
+/*=========================================================*/
+/* Nav Top Section  */
+/*=========================================================*/
+.row-width {
+  width: 100vw;
+}
+
+.nav-top .nav-search input {
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  padding-left: 40px;
+  position: relative;
+  border-radius: 30px;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.nav-top .nav-search input:focus {
+  outline: none;
+}
+
+.nav-top .nav-search button {
+  position: absolute;
+  left: 10px;
+  top: 1px;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-top .nav-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/*=========================================================*/
+/* Card Static Section  */
+/*=========================================================*/
+.card-static {
+  -webkit-box-shadow: 0 0 25px 0px #e0dfdf;
+          box-shadow: 0 0 25px 0px #e0dfdf;
+  border-radius: 15px;
+  background-color: transparent;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+.card-static:hover {
+  cursor: pointer;
+  background-color: #0d6efd;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+.card-static:hover .card-body div span:nth-child(1) {
+  color: #fff;
+}
+
+.card-static:hover .card-body div span:nth-child(2) {
+  color: #fff;
+}
+
+.card-static:hover .card-body svg {
+  color: #fff;
+}
+
+.card-static .card-body div span:nth-child(1) {
+  color: #0d6efd;
+}
+
+.card-static .card-body div span:nth-child(2) {
+  color: #6c757d;
+}
+
+.card-static .card-body svg {
+  color: #6c757d;
+}
+
+/*=========================================================*/
+/* Orders table Section  */
+/*=========================================================*/
+.orders-table {
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 25px 0px #e0dfdf;
+          box-shadow: 0 0 25px 0px #e0dfdf;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #0d6efd;
+}
+
+.orders-table tbody tr:hover td {
+  color: white;
+}
+
+/*=========================================================*/
+/* recent Customers List Section  */
+/*=========================================================*/
+.recent-customers {
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 25px 0px #e0dfdf;
+          box-shadow: 0 0 25px 0px #e0dfdf;
+}
+
+.recent-customers ul li {
+  padding: 5px;
+}
+
+.recent-customers ul li:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.recent-customers ul li:hover span:nth-child(2) {
+  color: #ffffff;
+}
+
+.recent-customers ul li div img {
+  border-radius: 50%;
+}
+
+.recent-customers ul li div span:nth-child(2) {
+  color: #6c757d;
+}
+
+/*=========================================================*/
+/* Media Section  */
+/*=========================================================*/
+@media (max-width: 500px) {
+  .nav-top .nav-search input {
+    width: 200px;
+  }
+  .orders-table {
+    overflow-x: auto;
+  }
+}
+/*# sourceMappingURL=admin.css.map */
